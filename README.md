@@ -1,4 +1,5 @@
-# human
-Best Books for Human Emotions and Disorders
+# Human
+
+A list of the best books about Human Emotions and Disorders
 
 ![](images/human.png)

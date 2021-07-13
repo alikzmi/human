@@ -14,16 +14,29 @@
 \graphicspath{{images/}}
 
 % Settings
-\sectionfont{\Huge\itshape}%
-\subsectionfont{\Large\itshape}%
+\setcounter{tocdepth}{2}
+\sectionfont{\itshape}%
+\subsectionfont{\itshape}%
 \subsubsectionfont{\itshape}%
 
 % Macros
 \newcommand{\nl}{\vspace{\baselineskip}}
+\newenvironment{additional}{%
+    \begin{list}{}%
+        {\setlength{\leftmargin}{\parindent}}%
+        \item[]%
+        Additional:
+        \begin{itemize}}
+    {\end{itemize}\end{list}}
 
 % Body
 \begin{document}
 \maketitle
+
+\section*{Categories and contribution}
+Despite the fact that the list is still a work in progress, one could add to
+categories or introduce books to the ones listed here. At the moment, table of
+content only includes categories with more than one entry.
 \begin{enumerate}
     \item Social Skills
     \item Generalized Anxiety Disorder
@@ -60,57 +73,60 @@
     \includegraphics[width=\textwidth]{human.png}
 \end{figure}
 
-\newpage
-
-\begin{large}
-	If you want to contribute, read these considerations:
-	\begin{enumerate}
-		\item The author should have a PhD degree in related topic
-		\item The author should be an expert in that field
-		\item The author's methods must be applicable
-	\end{enumerate}
-\end{large}
+In case you also want to add to the list, consider the points below:
+\begin{enumerate}
+    \item The author should have a PhD degree in related topic.
+    \item The author should be an expert in that field.
+    \item The author's methods must be applicable.
+\end{enumerate}
 
 \newpage
+% \tableofcontents
+% \newpage
 
-% Social Skills
-\section*{Social Skills}
-\subsubsection*{The Social Skills Guide Book}
-\subsubsection*{How to Win Friends and Influence People}
-\subsubsection*{Conversationally Speaking}
-\subsubsection*{How to Speak, How to Listen}\nl
-\subsection*{* Additional *}
-\subsubsection*{Improve your Social Skills}\nl
+\section{Social Skills}
+\begin{itemize}
+    \item The Social Skills Guide Book
+    \item How to Win Friends and Influence People
+    \item Conversationally Speaking
+    \item How to Speak, How to Listen
+\end{itemize}
+\begin{additional}
+    \item Improve your Social Skills
+\end{additional}
 
-% Generalized Anxiety Disorder
-\section*{Generalized Anxiety Disorder}
-\subsubsection*{Generalized Anxiety Disorder Work Book: A Comprehensive CBT Guide}
-\subsubsection*{Rewire your Anxious Brain}\nl
-\subsection*{* Additional *}
-\subsubsection*{Cognitive Behavioral Anxiety Disorder Treatment for Generalized}
-\subsubsection*{The Anxiety and Worry Workbook: The Cognitive Behavioural Solution}
-\subsubsection*{Generalized Anxiety Disorder: Advances in Research and Practice}\nl
+\section{Generalized Anxiety Disorder}
+\begin{itemize}
+    \item Generalized Anxiety Disorder Work Book: A Comprehensive CBT Guide
+    \item Rewire your Anxious Brain
+\end{itemize}
+\begin{additional}
+    \item Cognitive Behavioral Anxiety Disorder Treatment for Generalized
+    \item The Anxiety and Worry Workbook: The Cognitive Behavioural Solution
+    \item Generalized Anxiety Disorder: Advances in Research and Practice
+\end{additional}
 
-% Social Anxiety Disorder & Shyness
-\section*{Social Anxiety Disorder \& Shyness}
-\subsubsection*{The Shyness \& Social Anxiety Workbook}
-\subsubsection*{Overcoming Social Anxiety \& Shyness}\nl
+\section{Social Anxiety Disorder \& Shyness}
+\begin{itemize}
+    \item The Shyness \& Social Anxiety Workbook
+    \item Overcoming Social Anxiety \& Shyness
+\end{itemize}
 
-\newpage
+\section{Overthinking}
+\begin{itemize}
+    \item The Worry Trick
+    \item Soundtracks: The Surprising Solution to Overthinking
+\end{itemize}
 
-% Overthinking
-\section*{Overthinking}
-\subsubsection*{The Worry Trick}
-\subsubsection*{Soundtracks: The Surprising Solution to Overthinking}\nl
-
-% Self-confidence / Self-esteem
-\section*{Self-confidence / Self-esteem}
-\subsubsection*{The Confidence Gap}
-\subsubsection*{The Self-confidence Workbook}\nl
-
-\subsection*{* Additional *}
-\subsubsection*{Self-esteem: A Proven Program of Cognitive Technique}
-\subsubsection*{How to be yourself}\nl
+\section{Self-confidence / Self-esteem}
+\begin{itemize}
+    \item The Confidence Gap
+    \item The Self-confidence Workbook
+\end{itemize}
+\begin{additional}
+    \item Self-esteem: A Proven Program of Cognitive Technique
+    \item How to be yourself
+\end{additional}
 
 
 \end{document}

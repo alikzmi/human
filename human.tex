@@ -5,6 +5,7 @@
 \date{July 12, 2021}
 
 % Packages
+\usepackage{sectsty}
 \usepackage{xcolor}
 \usepackage{caption}
 \usepackage[utf8]{inputenc}
@@ -12,111 +13,120 @@
 \usepackage{graphicx}
 \graphicspath{{images/}}
 
+% Settings
+\setcounter{tocdepth}{2}
+\sectionfont{\itshape}%
+\subsectionfont{\itshape}%
+\subsubsectionfont{\itshape}%
+
+% Macros
+\newcommand{\nl}{\vspace{\baselineskip}}
+\newenvironment{additional}{%
+    \begin{list}{}%
+        {\setlength{\leftmargin}{\parindent}}%
+        \item[]%
+        Additional:
+        \begin{itemize}}
+    {\end{itemize}\end{list}}
+
 % Body
 \begin{document}
 \maketitle
+
+\section*{Categories and contribution}
+Despite the fact that the list is still a work in progress, one could add to
+categories or introduce books to the ones listed here. At the moment, table of
+content only includes categories with more than one entry.
 \begin{enumerate}
-
-\item Social Skills
-\item Generalized Anxiety Disorder
-\item Social Anxiety Disorder \& Shyness
-\item Over Thinking
-\item Jealousy
-\item Self-Awareness
-\item Self-Consiousness
-\item Happiness
-\item Paranoia
-\item Revenge
-\item Self-Confidence / Self-Esteem
-\item False Self-Confidence / Self-Esteem
-\item Addiction
-\item OCD
-\item Perfectionism
-\item Child Abuse \item Painful Past
-\item Panic Attack
-\item Self-Harm / Self-Injury
-\item Suicide
-\item Trauma
-\item Post Traumatic Stress Disorder
-\item Shizoaffective
-\item Shizophernia
-\item Hallucinations
-\item Delusional Disorder
-\item Major Depressive Disorder
-\item Dysthymia
-\item Bipolar Disorder
-
+    \item Social Skills
+    \item Generalized Anxiety Disorder
+    \item Social Anxiety Disorder \& Shyness
+    \item Overthinking
+    \item Jealousy
+    \item Self-awareness
+    \item Self-consciousness
+    \item Happiness
+    \item Paranoia
+    \item Revenge
+    \item Self-confidence / Self-esteem
+    \item False Self-confidence / Self-esteem
+    \item Addiction
+    \item OCD
+    \item Perfectionism
+    \item Child Abuse
+    \item Painful Past
+    \item Panic Attack
+    \item Self-harm / Self-injury
+    \item Suicide
+    \item Trauma
+    \item Post Traumatic Stress Disorder
+    \item Shizoaffective
+    \item Shizophernia
+    \item Hallucinations
+    \item Delusional Disorder
+    \item Major Depressive Disorder
+    \item Dysthymia
+    \item Bipolar Disorder
 \end{enumerate}
 
-\begin{center}
-	\includegraphics[scale=0.43]{human.png}
-\end{center}
+\begin{figure}[hb]\centering
+    \includegraphics[width=\textwidth]{human.png}
+\end{figure}
 
-\newpage
-
-\begin{large}
-\paragraph{}
-If you want to contribute , read these considerations :
-
+In case you also want to add to the list, consider the points below:
 \begin{enumerate}
-
-\item The author should have a PhD degree in related topic
-\item The author should be an expert in that field
-\item The author's methods must be applicable
-
+    \item The author should have a PhD degree in related topic.
+    \item The author should be an expert in that field.
+    \item The author's methods must be applicable.
 \end{enumerate}
 
-\end{large}
-
 \newpage
+% \tableofcontents
+% \newpage
 
-% Social Skills
-\section*{\scalebox{1.4}{\emph{Social Skills}}}
-\subsubsection*{\emph{The Social Skills Guide Book}}
-\subsubsection*{\emph{How to Win Friends and Influence People}}
-\subsubsection*{\emph{Conversationally Speaking}}
-\subsubsection*{\emph{How to Speak , How to Listen}\\}
+\section{Social Skills}
+\begin{itemize}
+    \item The Social Skills Guide Book
+    \item How to Win Friends and Influence People
+    \item Conversationally Speaking
+    \item How to Speak, How to Listen
+\end{itemize}
+\begin{additional}
+    \item Improve your Social Skills
+\end{additional}
 
-\subsection*{\scalebox{1.3}{\emph{* Additional *}}}
-\subsubsection*{\emph{Improve your Social Skills}\\}
+\section{Generalized Anxiety Disorder}
+\begin{itemize}
+    \item Generalized Anxiety Disorder Work Book: A Comprehensive CBT Guide
+    \item Rewire your Anxious Brain
+\end{itemize}
+\begin{additional}
+    \item Cognitive Behavioral Anxiety Disorder Treatment for Generalized
+    \item The Anxiety and Worry Workbook: The Cognitive Behavioural Solution
+    \item Generalized Anxiety Disorder: Advances in Research and Practice
+\end{additional}
 
+\section{Social Anxiety Disorder \& Shyness}
+\begin{itemize}
+    \item The Shyness \& Social Anxiety Workbook
+    \item Overcoming Social Anxiety \& Shyness
+\end{itemize}
 
-% Generalized Anxiety Disorder
-\section*{\scalebox{1.4}{\emph{Generalized Anxiety Disorder}}}
-\subsubsection*{\scalebox{0.9}{\emph{Generalized Anxiety Disorder Work Book : A Comprehensive CBT Guide}}}
-\subsubsection*{\emph{Rewire your Anxious Brain}\\}
+\section{Overthinking}
+\begin{itemize}
+    \item The Worry Trick
+    \item Soundtracks: The Surprising Solution to Overthinking
+\end{itemize}
 
-\subsection*{\scalebox{1.3}{\emph{* Additional *}}}
-\subsubsection*{\scalebox{0.9}{\emph{Cognitive Behavioral Anxiety Disorder Treatment for Generalized}}}
-\subsubsection*{\scalebox{0.9}{\emph{The Anxiety and Worry Workbook : The Cognitive Behavioural Solution}}}
-\subsubsection*{\scalebox{0.9}{\emph{Generalized Anxiety Disorder : Advances in Research and Practice}}\\}
-
-
-% Social Anxiety Disorder & Shyness
-\section*{\scalebox{1.4}{\emph{Social Anxiety Disorder} \& \emph{Shyness}}}
-\subsubsection*{\emph{The Shyness} \& \emph{Social Anxiety Workbook}}
-\subsubsection*{\emph{Overcoming Social Anxiety} \& \emph{Shyness}\\}
-
-% Over Thinking
-\section*{\scalebox{1.4}{\emph{Over Thinking}}}
-\subsubsection*{\emph{The Worry Trick}}
-\subsubsection*{\emph{Soundtracks : The Suprising Solution to Overthinking}\\}
-
-\newpage
-
-% Self-Confidence / Self-Esteem
-\section*{\scalebox{1.4}{\emph{Self-Confidence / Self-Esteem}}}
-\subsubsection*{\emph{The Confidence Gap}}
-\subsubsection*{\emph{The Self-Confidence Workbook}\\}
-
-\subsection*{\scalebox{1.3}{\emph{* Additional *}}}
-\subsubsection*{\emph{Self-Esteem : A Proven Program of Cognitive Technique}}
-\subsubsection*{\emph{How to be yourself}}
-
-
-
-
-
+\section{Self-confidence / Self-esteem}
+\begin{itemize}
+    \item The Confidence Gap
+    \item The Self-confidence Workbook
+\end{itemize}
+\begin{additional}
+    \item Self-esteem: A Proven Program of Cognitive Technique
+    \item How to be yourself
+\end{additional}
 
 
 \end{document}
